@@ -13,6 +13,15 @@ BluetoothSerial.on = (eventName, handler) => {
 }
 
 /**
+ * unListen available events
+ * @param  {String} eventName Name of event one of connectionSuccess, connectionLost, data, rawData
+ * @param  {Function} handler Event handler
+ */
+BluetoothSerial.off = (eventName, handler) => {
+  DeviceEventEmitter.removeListener(eventName, handler)
+}
+
+/**
  * Write data to device, you can pass string or buffer,
  * We must convert to base64 in RN there is no way to pass buffer directly
  * @param  {Buffer|String} data

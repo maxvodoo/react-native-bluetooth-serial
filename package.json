@@ -1,6 +1,6 @@
 {
-  "name": "react-native-bluetooth-serial",
-  "version": "0.1.5",
+  "name": "react-native-bluetooth-hc05",
+  "version": "0.2.0",
   "description": "'Bluetooth serial for react native'",
   "main": "index.js",
   "scripts": {
@@ -8,18 +8,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rusel1989/react-native-bluetooth-serial.git"
+    "url": "git+https://github.com/niggor/react-native-bluetooth-serial.git"
   },
   "keywords": [
     "bluetooth",
-    "react-native"
+    "react-native",
+	"HC-05",
+	"HC-06",
+	"Arduino"
   ],
   "author": "Jakub Martyčák <martycakjakub@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rusel1989/react-native-bluetooth-serial/issues"
+    "url": "https://github.com/niggor/react-native-bluetooth-serial/issues"
   },
-  "homepage": "https://github.com/rusel1989/react-native-bluetooth-serial#readme",
+  "homepage": "https://github.com/niggor/react-native-bluetooth-serial#readme",
   "dependencies": {
     "buffer": "^4.6.0"
   }

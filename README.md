@@ -1,5 +1,8 @@
 ## React Native Bluetooth Serial
 
+Fork from https://github.com/rusel1989/react-native-bluetooth-serial
+I need some features for my project, so i did that.
+
 React Native version of [BluetoothSerial](https://github.com/don/BluetoothSerial) plugin. For both
 android and ios
 
@@ -95,6 +98,14 @@ Write data to connected device, for now buffer is internally converted to Base64
 on native side, beacause react native is currently not capable of passing buffer directly to native methods. Resolves
 to true when write was successful, otherwise rejects with error.
 
+### [android] subscribe(String delimeter)
+Subscribe to `.on('data', ... )` event. `delimeter` is data split String.
+
+### [android] unsubscribe()
+That is.
+
+### read()
+Read input data (up to `delimeter` param in `subscribe()` function)
 
 ## Events
 You can listen to few event with `BluetoothSerial.on(eventName, callback)`
@@ -104,6 +115,7 @@ Currently provided events are:
 - `bluetoothDisabled` - when user disabled bt
 - `connectionSuccess` - when app connected to device
 - `connectionLost` - when app lost connection to device (fired with `bluetoothDisabled`)
+- `data` - when `delimeter` received (argument in `subscribe()` function)
 
 ## TODO
 - Make services configurable on ios
